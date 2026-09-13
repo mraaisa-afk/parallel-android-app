@@ -14,7 +14,7 @@ android {
         minSdk = 26
         targetSdk = 36
         versionCode = 1
-        versionName = "0.1.0"
+        versionName = "0.2.0"
     }
 
     buildFeatures { compose = true }
@@ -37,11 +37,14 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime)
 
     implementation(libs.ktor.server.core)
-    implementation(libs.ktor.server.cio)
+    implementation(libs.ktor.server.netty)
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.websockets)
     implementation(libs.ktor.server.html.builder)
+    implementation(libs.ktor.server.auth)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.bouncycastle)
+    implementation(libs.bouncycastle.pkix)
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
