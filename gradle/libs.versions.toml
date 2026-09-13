@@ -1,12 +1,13 @@
 [versions]
 androidGradlePlugin = "9.4.0"
-kotlin = "2.4.0"
+kotlin = "2.4.20"
 composeBom = "2026.08.00"
 coreKtx = "1.17.0"
-activityCompose = "1.11.0"
-lifecycleRuntime = "2.9.3"
+activityCompose = "1.13.0"
+lifecycleRuntime = "2.10.0"
 ktor = "3.5.2"
 serialization = "1.9.0"
+bouncycastle = "1.86"
 
 [libraries]
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
@@ -17,7 +18,10 @@ ktor-server-cio = { module = "io.ktor:ktor-server-cio", version.ref = "ktor" }
 ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
 ktor-server-websockets = { module = "io.ktor:ktor-server-websockets", version.ref = "ktor" }
 ktor-server-html-builder = { module = "io.ktor:ktor-server-html-builder", version.ref = "ktor" }
+ktor-server-auth = { module = "io.ktor:ktor-server-auth", version.ref = "ktor" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+bouncycastle = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncycastle" }
+bouncycastle-pkix = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncycastle" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
